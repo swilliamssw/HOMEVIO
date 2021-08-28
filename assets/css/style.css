@@ -1,17 +1,53 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     border: none;
 }
 
+/*Logo*/
 #logo {
-    font-family:Poppins, sans-serif;
+    font-family: Poppins, sans-serif;
+    font: 5px;
     letter-spacing: 4px;
-    float: left;
     text-transform: uppercase;
-    line-height: 30px;
-    display: flex;
+    line-height: 10px;
     padding: 15px;
     margin: 15px;
+    cursor: pointer;
+}
+
+/*Navigation Menu*/
+.menu {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    margin-top: 0%;
+}
+
+.menu, a {
+    font-family: Poppins, sans-serif;
+    text-decoration: none;
+    color: slategray;
+    float: right;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.menu li {
+    font-size: 70%;
+    letter-spacing: 4px;
+    float: left;
+    list-style-type: none;
+    display: inline-block;
+    
+}
+
+.menu a:hover {
+    border-bottom: 1px solid rgb(15, 236, 225);
+}
+
+.active {
+    border-bottom: 1px solid rgb(15, 236, 225);
 }
