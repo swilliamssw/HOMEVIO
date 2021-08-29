@@ -5,49 +5,117 @@
     border: none;
 }
 
-/*Logo*/
-#logo {
-    font-family: Poppins, sans-serif;
-    font: 5px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    line-height: 10px;
-    padding: 15px;
-    margin: 15px;
-    cursor: pointer;
-}
+@media only screen and (min-width:640px) {
+    h1 {
+        font-family: Poppins, sans-serif;
+    }
 
-/*Navigation Menu*/
-.menu {
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    display: flex;
-    margin-top: 0%;
-}
+    /*Logo*/
+    .logo img {
+        background: white;
+        margin-left: 280px;
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        display: flex;
+    }
 
-.menu, a {
-    font-family: Poppins, sans-serif;
-    text-decoration: none;
-    color: slategray;
-    float: right;
-    letter-spacing: 4px;
-    text-align: center;
-    padding: 14px 16px;
-}
+    .logo {
+        top: 0;
+        left: 0;
+        color: slategray;
+        font-family: Poppins, sans-serif;
+        letter-spacing: 4px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
 
-.menu li {
-    font-size: 70%;
-    letter-spacing: 4px;
-    float: left;
-    list-style-type: none;
-    display: inline-block;
-    
-}
+    .logo a {
+        text-decoration: none;
+        color: slategray;
+        font-family: Poppins, sans-serif;
+        letter-spacing: 4px;
+        text-align: center;
+    }
 
-.menu a:hover {
-    border-bottom: 1px solid rgb(15, 236, 225);
-}
+    /*Navigation Menu*/
+    .menu {
+        background-color: rgb(255, 255, 255);
+        overflow: hidden;
+        display: fixed;
+        margin-left: 45px;
+        justify-content: center;
+    }
 
-.active {
-    border-bottom: 1px solid rgb(15, 236, 225);
+    .menu li {
+        line-height: 1px;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: slategray;
+        text-align: center;
+    }
+
+    .menu li {
+        float: left;
+        list-style-type: none;
+        margin-right: 45px;
+        font-size: 20px;
+        padding: 10px;
+        padding-top: 10px;
+    }
+
+    .active {
+        border-bottom: 1px solid rgb(15, 236, 225);
+    }
+
+    .menu a:hover {
+        border-bottom: 1px solid rgb(15, 236, 225);
+    }
+
+    /* Hero video */
+    .hero-video video {
+        width: 640px;
+        height: 370px;
+        object-fit: contain;
+        align-items: center;
+        position: relative;
+        z-index: -1;
+    }
+
+    #button {
+        margin: 10px;
+        font-family: Poppins, sans-serif;
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 15% auto;
+        color: slategray;
+        box-shadow: 0 0 20px turquoise;
+        border-radius: 10px;
+        width: 100px;
+        box-shadow: 0 1px 3px turquoise, 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.1s cubic-bezier(.25, .8, .25, 1);
+        cursor: pointer;
+        border-radius: 20px;
+        margin-left: 260px;
+        position: absolute;
+        display: screen;
+        z-index: 2;
+    }
+
+    #button {
+        background-image: linear-gradient(to right, 0%, #F7BB97 51%, #4edbd0 100%)
+    }
+
+    #button h1:hover {
+        background-position: right center;
+    }
+
 }
