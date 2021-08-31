@@ -3,192 +3,258 @@
     padding: 0;
     box-sizing: border-box;
     border: none;
+    font-family: Poppins, sans-serif;
 }
 
-@media only screen and (min-width:640px) {
-    h1 {
-        font-family: Poppins, sans-serif;
-    }
+/* Layout*/
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
 
-    /*Logo*/
-    .logo img {
-        background: white;
-        margin-left: 280px;
-        width: 80px;
-        height: 80px;
-        object-fit: contain;
-        display: flex;
-    }
+.container a {
+    color: slategray;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+    font-family: Poppins, sans-serif;
+    display: fixed;
+    margin-top: 25%;
+}
 
-    .logo {
-        top: 0;
-        left: 0;
-        color: slategray;
-        font-family: Poppins, sans-serif;
-        letter-spacing: 4px;
-        text-align: center;
-        padding-bottom: 10px;
-    }
+.container h3:hover {
+    border-bottom: 2px solid turquoise;
+}
 
-    .logo a {
-        text-decoration: none;
-        color: aquamarine;
-        font-family: Poppins, sans-serif;
-        letter-spacing: 4px;
-        text-align: center;
-    }
+.container img {
+    width: 350px;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+.container video {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+}
 
-    /*Navigation Menu*/
-    .menu {
-        background-color: rgb(255, 255, 255);
-        overflow: hidden;
-        display: fixed;
-        margin-left: 130px;
-        justify-content: center;
-        position: sticky;
-    }
+.container p {
+    font-family: Poppins, sans-serif;
+    color: slategray;
+    text-align: center;
+}
 
-    .menu li {
-        line-height: 1px;
-        padding: 10px;
-        margin: 10px;
-        text-align: center;
-    }
+.column,
+.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
 
-    .menu a {
-        text-decoration: none;
-        color: slategray;
-        text-align: center;
-        font-family: Poppins, sans-serif;
-    }
+/*Logo*/
+.logo-image {
+    background: white;
+    margin-left: 0;
+}
 
-    .menu li {
-        float: left;
-        list-style-type: none;
-        margin-right: 50x;
-        font-size: 15px;
-        padding: 10px;
-        padding-top: 10px;
-    }
+.logo-name {
+    top: 0;
+    left: 0;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
 
-    .active {
-        border-bottom: 1px solid rgb(15, 236, 225);
-    }
+.logo-image a {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 550px;
+    mix-blend-mode: screen;
+    position: absolute;
+    margin-bottom: 100%;
+    margin-left: 890px;
+    color: aquamarine;
+}
 
-    .menu a:hover {
-        border-bottom: 1px solid rgb(15, 236, 225);
-    }
-
-    /* Hero video */
-    .hero-video video {
-        width: 640px;
-        height: 370px;
-        object-fit: contain;
-        align-items: center;
-        position: relative;
-        z-index: -1;
-    }
-
-    #button {
-        margin: 10px;
-        padding: 5px;
-        text-align: center;
-        text-transform: uppercase;
-        transition: 0.5s;
-        background-size: 15% auto;
-        box-shadow: 0 0 20px turquoise;
-        border-radius: 10px;
-        width: 80px;
-        box-shadow: 0 1px 3px turquoise, 0 1px 2px rgba(0, 0, 0, 0.24);
-        transition: all 0.1s cubic-bezier(.25, .8, .25, 1);
-        cursor: pointer;
-        border-radius: 18px;
-        margin-left: 285px;
-        position: absolute;
-        mix-blend-mode: screen;
-        margin-top: -25%;
-    }
-
-    .sign-up-button a {
-        text-decoration: none;
-        font-family: Poppins, sans-serif;
-        font-size: 13px;
-        color: slategray;
-    }
-
-    #button h1:hover {
-        background-position: right center;
-    }
-
-    #button a:hover {
-        border-bottom: 1px solid aquamarine;
-    }
-
-    .cover-text h2 {
-        color: aquamarine ;
-        text-align: center;
-        font-size: 35px;
-        margin-top: 50px;
-        font-family: Poppins, sans-serif;
-        object-fit: contain;
-        margin-top: -35%;
-        font-weight: 300;
-        mix-blend-mode: screen;
-        display: fixed;
+.logo-name a {
+    text-decoration: none;
+    color: turquoise;
+    font-family: Poppins, sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 30px;
     
-    }
+}
 
-    .workout-tabs h2 {
-        color: slategray;
-        text-align: center;
-        font-size: 20px;
-        margin-top: 50px;
-        font-family: Poppins, sans-serif;
-        margin-top: 35%;
-        font-weight: 300;
-        padding-bottom: 400px;
-    }
+/*Navigation Menu*/
+.menu {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
 
-    .box-yoga h4 {
-        text-align: center;
-        color: slategray;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-family: Poppins, sans-serif;
-        font-size: 20px;
-    }
+    justify-content: center;
 
-    .box-yoga h4 {
-        width: 210px;
-        background: silver;
-        border-right-width: thin;
-        border-right-style: solid;
-        margin-top: -50px;
-        margin-bottom: 10px;
-        padding-top: 40px;
-        padding-right: 40px;
-        padding-bottom: 40px;
-        padding-left: 40px;
-    }
+}
 
-    .box-fitness h4 {
-        text-align: center;
-        color: slategray;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-family: Poppins, sans-serif;
-        font-size: 20px;
-        font-weight: bold;
+.menu li {
+    line-height: 1px;
+    padding: 10px;
+    margin: 10px;
+}
 
-    }
+.menu a {
+    text-decoration: none;
+    color: slategray;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+}
 
-    .box-meditation h4 {
-        text-align: center;
-        color: slategray;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-family: Poppins, sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-    }
+.menu li {
+    float: left;
+    list-style-type: none;
+    margin-right: 50x;
+    font-size: 23px;
+    padding-top: 10px;
+}
+
+.active {
+    border-bottom: 1px solid rgb(15, 236, 225);
+}
+
+.menu a:hover {
+    border-bottom: 1px solid rgb(15, 236, 225);
+}
+
+/* Hero video */
+.hero-video video {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+#button {
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 1px 3px turquoise, 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.1s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 45%;
+    position: absolute;
+    mix-blend-mode: normal;
+    margin-top: -170px;
+    display: flex;
+    object-fit: contain;
+}
+
+.sign-up-button a {
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    display: fixed;
+    color: slategray;
+}
+
+.sign-up-button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#button h1:hover {
+    background-position: center;
+}
+
+#button a:hover {
+    border-bottom: 1px solid aquamarine;
+}
+
+.cover-text h2 {
+    color: turquoise;
+    text-align: center;
+    font-size: 350%;
+    font-family: Poppins, sans-serif;
+    object-fit: contain;
+    margin-top: -30%;
+    font-weight: bold;
+    mix-blend-mode: screen;
+    display: fixed;
+}
+
+/* Workout tabs */
+.workout-tabs h2 {
+    color: slategray;
+    text-align: center;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    margin-top: 25%;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 1px;
+}
+
+.container {
+    font-family: Poppins, sans-serif;
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+    margin-top: 25px;
+}
+
+.container a {
+    text-decoration: none;
+    color: slategray;
+    text-align: center;
+}
+
+.workout-tabs a:hover {
+    border-bottom: 1px solid turquoise;
+}
+
+.container img {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    object-fit: contain;
+    justify-content: center;
+    margin-top: 1px;
+    margin-bottom: 20%;
+    border-radius: 20px;
+    color: turquoise;
+}
+
+.container:after,
+.row:after,
+.u-cf {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.explore {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: turquoise;
+    margin-top: 10px;
+    margin-bottom: 1px;
 }
