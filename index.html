@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="HandheldFriendly" content="true">
     <meta name="description"
         content="The best online home fitness, yoga and meditation classes. Access to hand picked videos with expert instructors in yoga, meditation, HIIT, and more. Sign up for weekly updates to keep you on track with your fitness.">
@@ -19,136 +19,124 @@
 </head>
 
 <body>
-    <article>
-        <header>
-            <!--...-->
-
-            <div class="logo-image">
-                <a href="index.html"><img src="assets/images/images/logo.png" alt="logo"></a>
+    <header>
+        <!--...-->
+        <div class="logo-image">
+            <a href="index.html"><img src="assets/images/images/logo.png" alt="logo"></a>
+        </div>
+        <div class="logo-text">
+            <a href="index.html"><h1>HOMEVIO</h1></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html" class="active">HOME</a>
+                </li>
+                <li>
+                    <a href="#">EXPLORE</a>
+                </li>
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#">SIGN IN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fitness video with centered text and button -->
+    <section>
+        <div class="hero-video">
+            <!-- Video taken from https://www.pexels.com/video/young-woman-doing-exercise-at-home-6446108/ -->
+            <video src="assets/videos/fitness-video/pexels-pavel-danilyuk-6446108.mp4" autoplay loop muted></video>
+            <div id="button">
+                <a href="#">SIGN UP</a>
             </div>
-            <div class="logo-name">
-                <a href="index.html">
-                    <h1 id="logo">HOMEVIO</h1>
-                </a>
+            <div class="cover-text">
+                <h2>BRING HOME WHAT MOVES YOU!</h2>
             </div>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="index.html" class="active">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#">EXPLORE</a>
-                    </li>
-                    <li>
-                        <a href="#">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="#">SIGN IN</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!--Fitness video with centered text and button-->
-        <section>
-            <div class="hero-video">
-                <video autoplay loop muted>
-                    <source src="assets/videos/FITNESS VIDEOS/pexels-pavel-danilyuk-6446108.mp4" type="video/mp4"
-                        alt="meditation video">
-                </video>
-                <div class="sign-up-button">
-                    <button id="button">
-                        <a href="#">SIGN UP</a>
-                    </button>
-                </div>
-                <div class="cover-text">
-                    <h2>BRING HOME WHAT MOVES YOU!</h2>
-                </div>
-            </div>
-            </div>
-        </section>
-        <!--very small paragraph and three tabs for yoga, fitness and
+        </div>
+    </section>
+    <!--very small paragraph and three tabs for yoga, fitness and
         mindfulness/meditation-->
-        <section class="workout-tabs">
-            <div>
-                <h2>FIND COMFORT IN WHAT MOVES YOU</h2>
+    <section class="workout-tabs">
+        <div>
+            <h2>FIND COMFORT IN WHAT MOVES YOU</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="four.columns">
+                    <a href="#">
+                        <h3>YOGA</h3>
+                    </a>
+                </div>
+                <div class="four.columns">
+                    <a href="#"><img src="assets/images/images/yoga-card.png" alt="yoga image"></a>
+                </div>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="four.columns">
                         <a href="#">
-                            <h3>YOGA</h3>
+                            <h3>FITNESS</h3>
                         </a>
                     </div>
-                    <div class="four.columns">
-                        <photo>
-                            <a href="#"><img src="assets/images/images/yoga card.png" type="image/png"
-                                    alt="yoga image"></a>
-                        </photo>
+                    <div class="four columns">
+                        <!-- Image taken from https://www.pexels.com/photo/photo-of-woman-doing-yoga-2294353/ -->
+                        <a href="#"><img src="assets/images/images/fitness-card.png" alt="fitness image"></a>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="four.columns">
-                            <a href="#">
-                                <h3>FITNESS</h3>
-                            </a>
-                        </div>
-                        <div class="four.columns">
-                            <photo>
-                                <a href="#"><img src="assets/images/images/Fitness card.png" type="
-                    image/png" alt="fitness image"></a>
-                            </photo>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="four.columns">
-                            <a href="#">
-                                <h3>MEDITATION</h3>
-                            </a>
-                        </div>
-                        <div class="four.columns">
-                            <photo>
-                                <a href="#"><img src="assets/images/images/meditation card.png" type="
-                    image/png" alt="meditation image"></a>
-                            </photo>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="u-cf"></div>
-        </section>
-        <!--small paragraph with button below with image to right-->
-        <section>
-            <div class="explore">
-                <h2>READY WHEN YOU ARE</h2>
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="six coloums">
-                        <video autoplay controls loop muted>
-                            <source src="assets/videos/FITNESS VIDEOS/pexels-mart-production-8027704.mp4"
-                                type="video/mp4" alt="fitness video">
-                        </video>
+                    <div class="four columns">
+                        <a href="#">
+                            <h3>MEDITATION</h3>
+                        </a>
                     </div>
-                    <div class="six coloumns">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id itaque odio qui nostrum eaque
-                            excepturi maiores fuga dolores incidunt nam quis ducimus obcaecati sint fugit, consectetur,
-                            nihil unde nemo provident!</p>
+                    <div class="four.columns">
+                        <!-- Image taken from https://www.pexels.com/photo/woman-girl-animal-dog-4056535/ -->
+                        <a href="#"><img src="assets/images/images/meditation-card.png" alt="meditation image"></a>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="u-cf"></div>
+    </section>
+    <!-- small paragraph with button below with image to right-->
+    <section>
+        <div class="explore">
+            <h2>READY WHEN YOU ARE</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="four coloums">
+                    <!--Video taken from -->
+                    <video src="assets/videos/fitness-video/pexels-mart-production-8027704.mp4" autoplay controls loop
+                        muted></video>
+                </div>
+                <div class="four.coloumns">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id itaque odio qui nostrum eaque
+                        excepturi maiores fuga dolores incidunt nam quis ducimus obcaecati sint fugit, consectetur,
+                        nihil unde nemo provident!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--small paragraph with button below with image to left-->
+    <section>
+        <h2>FOR EVERY SPACE AT ANY PACE</h2>
+    </section>
+    <!-- get started link to classes and sign up link-->
+    <section>
+        <h2>TRY NOW!</h2>
+    </section>
+    <footer>
+        <!--PRIVACY POLICY,TERMS OF USE,COOKIES AS BUTTONS AND COPYRIGHT LOGO AND 2021 HOMEVIO-->
+        <section>
+            <h2>PRIVACY POLICY,TERMS OF USE,COOKIES</h2>
         </section>
-        <!--small paragraph with button below with image to left-->
-        <section>FOR EVERY SPACE AT ANY PACE</section>
-        <!-- get started link to classes and sign up link-->
-        <section>TRY NOW!</section>
-        <footer>
-            <!--PRIVACY POLICY,TERMS OF USE,COOKIES AS BUTTONS AND COPYRIGHT LOGO AND 2021 HOMEVIO-->
-            <section>PRIVACY POLICY,TERMS OF USE,COOKIES</section>
-        </footer>
-    </article>
+    </footer>
 </body>
 
 </html>
