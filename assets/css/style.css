@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     border: none;
-    font-family: Poppins, sans-serif;
+    text-decoration: none;
 }
 
 /* Layout*/
@@ -31,15 +31,19 @@
     border-bottom: 2px solid turquoise;
 }
 
-.container img {
-    width: 350px;
+.container a img {
+    width: 80%;
     height: auto;
-    display: flex;
-    position: relative;
+    display: block;
+    position:static;
+    margin-bottom: 15px;
+    align-content: center;
+    object-fit: contain;
 }
+
 .container video {
     width: 400px;
-    height: 400px;
+    height: 350px;
     display: inline-block;
     position: absolute;
     align-content: center;
@@ -59,72 +63,65 @@
     box-sizing: border-box;
 }
 
-/*Logo*/
+/* Logo image and text */
 .logo-image {
     background: white;
     margin-left: 0;
 }
 
-.logo-name {
+.logo-image a img {
+    width: 80px;
+    height: auto;
+    display: flex;
+    margin-top: 130px;
+    mix-blend-mode: screen;
+    margin-bottom: 100%;
+    position: absolute;
+    margin-left: 150px;
+    color: turquoise;
+}
+
+.logo-text a {
     top: 0;
     left: 0;
-    padding-bottom: 10px;
-    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-top: 22px;
 }
 
-.logo-image a {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-top: 550px;
-    mix-blend-mode: screen;
-    position: absolute;
-    margin-bottom: 100%;
-    margin-left: 890px;
-    color: aquamarine;
-}
-
-.logo-name a {
-    text-decoration: none;
+.logo-text a {
+    width: fit-content;
+    height: auto;
+    display: inline-block;
     color: turquoise;
     font-family: Poppins, sans-serif;
     letter-spacing: 4px;
     text-align: center;
-    font-size: 30px;
-    
+    font-size: 25px;
+    justify-content: center;
+    align-content: center;
+    margin-left: 16%;
 }
 
 /*Navigation Menu*/
-.menu {
+.menu li {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
-    display: flex;
-
+    display: inline-block;
     justify-content: center;
-
-}
-
-.menu li {
+    align-items: center;
+    list-style-type: none;
+    font-size: 11px;
+    padding-top: 10px;
     line-height: 1px;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 8%;
 }
 
 .menu a {
-    text-decoration: none;
     color: slategray;
     text-align: center;
     font-family: Poppins, sans-serif;
-}
-
-.menu li {
-    float: left;
-    list-style-type: none;
-    margin-right: 50x;
-    font-size: 23px;
-    padding-top: 10px;
 }
 
 .active {
@@ -137,39 +134,38 @@
 
 /* Hero video */
 .hero-video video {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     align-items: center;
-    display: flex;
-}
-
-#button {
-    margin: 10px;
-    padding: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    box-shadow: 0 1px 3px turquoise, 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.1s cubic-bezier(.25, .8, .25, 1);
-    cursor: pointer;
-    border-radius: 50px;
-    margin-left: 45%;
-    position: absolute;
-    mix-blend-mode: normal;
-    margin-top: -170px;
-    display: flex;
+    display: block;
     object-fit: contain;
 }
 
-.sign-up-button a {
-    text-decoration: none;
-    font-family: Poppins, sans-serif;
-    font-size: 15px;
-    display: fixed;
-    color: slategray;
+#button a {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 1px 5px turquoise, 0 1px 5px rgba(0, 0, 0, 0.24);
+    transition: all 0.1s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 140px;
+    position: absolute;
+    mix-blend-mode: normal;
+    margin-top: -70px;
+    object-fit: contain;
+    display: block;
 }
 
-.sign-up-button {
-    display: flex;
+#button a {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    display: block;
+    color: turquoise;
+}
+
+#button {
     width: 100%;
     height: 100%;
 }
@@ -183,78 +179,79 @@
 }
 
 .cover-text h2 {
-    color: turquoise;
+    color: slategray;
     text-align: center;
-    font-size: 350%;
+    font-size: 23px;
     font-family: Poppins, sans-serif;
     object-fit: contain;
-    margin-top: -30%;
+    margin-top: -35%;
     font-weight: bold;
     mix-blend-mode: screen;
-    display: fixed;
+    display: block;
 }
 
 /* Workout tabs */
 .workout-tabs h2 {
-    color: slategray;
+    color: turquoise;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Poppins, sans-serif;
-    margin-top: 25%;
-    font-weight: bold;
+    margin-top: 28%;
+    font-weight: lighter;
     padding-bottom: 10px;
-    margin-bottom: 1px;
+    margin-bottom: 1%;
+}
+
+.workout-tabs h3 {
+    font-weight: lighter;
+    font-size: 18px;
+    border-bottom: 1px solid turquoise;
+    padding-bottom: 1%;
 }
 
 .container {
-    font-family: Poppins, sans-serif;
-    display: grid;
+    display: block;
     gap: 1rem;
     grid-auto-flow: column;
     grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
-    margin-top: 25px;
-}
-
-.container a {
-    text-decoration: none;
-    color: slategray;
-    text-align: center;
-}
-
-.workout-tabs a:hover {
-    border-bottom: 1px solid turquoise;
+    margin-top: 0px;
 }
 
 .container img {
-    width: 280px;
-    height: 280px;
+    width: 80%;
+    height: auto;
     display: flex;
-    object-fit: contain;
     justify-content: center;
-    margin-top: 1px;
+    margin-top: 1%;
     margin-bottom: 20%;
     border-radius: 20px;
     color: turquoise;
+    align-items: center;
+    margin-left: 35px;
+}
+/* About section of page */
+.about video {
+    width: 50px;
+    height: auto;
+    display: block;    
+    margin-top: 1%;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
-.container:after,
-.row:after,
-.u-cf {
-    content: "";
+.four.coloumns {
+    align-items: center;
     display: flex;
-    clear: both;
+    float: right;
+    overflow-wrap: break-word;
 }
 
-.explore {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    font-family: Poppins, sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+.about h2 {
+    font-size: 18px;
+    font-weight: lighter;
     color: turquoise;
     margin-top: 10px;
-    margin-bottom: 1px;
+   text-align: center;
+   font-family: Poppins, sans-serif;
+   padding-top: 25px;
 }
