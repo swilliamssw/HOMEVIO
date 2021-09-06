@@ -6,61 +6,252 @@
     text-decoration: none;
 }
 
-body {
-    background-color: #f3f3f3;
-}
-
-header {
-    background-color: #fff;
+/* Layout*/
+.container {
+    position: relative;
     width: 100%;
-    height: 100px;
-}
-/* Navigation menu */
-header nav ul {
-    display: block;
+    max-width: 960px;
     margin: 0 auto;
-    width: fit-content;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-header nav ul li {
-    display: inline-block;
-    float: none;
-    list-style: none;
-}
-
-header nav ul li a {
+.container a {
+    color: slategray;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
     font-family: Poppins, sans-serif;
-    font-size: 17px;
-    color: turquoise;
-    padding: 0 10px;
+    display: fixed;
+    margin-top: 25%;
+}
+
+.container h3:hover {
+    border-bottom: 2px solid turquoise;
+}
+
+.container a img {
+    width: 80%;
+    height: auto;
+    display: block;
+    position:static;
+    margin-bottom: 15px;
+    align-content: center;
+    object-fit: contain;
+}
+
+.container video {
+    width: 400px;
+    height: 350px;
+    display: inline-block;
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+}
+
+.container p {
+    font-family: Poppins, sans-serif;
+    color: slategray;
+    text-align: center;
+}
+
+.column,
+.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
 }
 
 /* Logo image and text */
-.logo-image img{
-    display: flex;
-    width: 60px;
+.logo-image {
+    background: white;
+    margin-left: 0;
+}
+
+.logo-image a img {
+    width: 80px;
     height: auto;
-    margin-top: 65%; 
+    display: flex;
+    margin-top: 130px;
     mix-blend-mode: screen;
+    margin-bottom: 100%;
     position: absolute;
-    margin-left: 83%;
+    margin-left: 150px;
+    color: turquoise;
 }
 
 .logo-text a {
-    font-family: Poppins, sans-serif;
-    text-align: center;
-    color: turquoise;
-    justify-content: center;
-    display: block;
-    margin-top: 10%;
+    top: 0;
+    left: 0;
+    padding-bottom: 5px;
+    padding-top: 22px;
 }
 
-/* Cover image and text */
-
-.hero-video video {
-    display: block;
-    width: 100%;
+.logo-text a {
+    width: fit-content;
     height: auto;
+    display: inline-block;
+    color: turquoise;
+    font-family: Poppins, sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 25px;
     justify-content: center;
-    max-width: fit-content;
+    align-content: center;
+    margin-left: 16%;
+}
+
+/*Navigation Menu*/
+.menu li {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 11px;
+    padding-top: 10px;
+    line-height: 1px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 8%;
+}
+
+.menu a {
+    color: slategray;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+}
+
+.active {
+    border-bottom: 1px solid rgb(15, 236, 225);
+}
+
+.menu a:hover {
+    border-bottom: 1px solid rgb(15, 236, 225);
+}
+
+/* Hero video */
+.hero-video video {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    display: block;
+    object-fit: contain;
+}
+
+#button a {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 1px 5px turquoise, 0 1px 5px rgba(0, 0, 0, 0.24);
+    transition: all 0.1s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 140px;
+    position: absolute;
+    mix-blend-mode: normal;
+    margin-top: -70px;
+    object-fit: contain;
+    display: block;
+}
+
+#button a {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    display: block;
+    color: turquoise;
+}
+
+#button {
+    width: 100%;
+    height: 100%;
+}
+
+#button h1:hover {
+    background-position: center;
+}
+
+#button a:hover {
+    border-bottom: 1px solid aquamarine;
+}
+
+.cover-text h2 {
+    color: slategray;
+    text-align: center;
+    font-size: 23px;
+    font-family: Poppins, sans-serif;
+    object-fit: contain;
+    margin-top: -35%;
+    font-weight: bold;
+    mix-blend-mode: screen;
+    display: block;
+}
+
+/* Workout tabs */
+.workout-tabs h2 {
+    color: turquoise;
+    text-align: center;
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+    margin-top: 28%;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    margin-bottom: 1%;
+}
+
+.workout-tabs h3 {
+    font-weight: lighter;
+    font-size: 18px;
+    border-bottom: 1px solid turquoise;
+    padding-bottom: 1%;
+}
+
+.container {
+    display: block;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+    margin-top: 0px;
+}
+
+.container img {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 20%;
+    border-radius: 20px;
+    color: turquoise;
+    align-items: center;
+    margin-left: 35px;
+}
+/* About section of page */
+.about video {
+    width: 50px;
+    height: auto;
+    display: block;    
+    margin-top: 1%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.four.coloumns {
+    align-items: center;
+    display: flex;
+    float: right;
+    overflow-wrap: break-word;
+}
+
+.about h2 {
+    font-size: 18px;
+    font-weight: lighter;
+    color: turquoise;
+    margin-top: 10px;
+   text-align: center;
+   font-family: Poppins, sans-serif;
+   padding-top: 25px;
 }
