@@ -127,13 +127,32 @@
     border-bottom: 1px solid rgb(15, 236, 225);
 }
 
+/* create the level of zoom for main  video */
+
+@keyframes main-zoom {
+    from {
+        transform: scale(2.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+/* Animates zoom effect on loading page */
+ .logo-text{
+    animation-name: main-zoom;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+}
+
 /* Hero video */
-.hero-video video {
+.hero-video video{
     width: 100%;
     height: auto;
     align-items: center;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
+
 }
 
 #button a {
@@ -147,7 +166,7 @@
     border-radius: 25px;
     margin-left: 40%;
     position: absolute;
-    mix-blend-mode: normal;
+    mix-blend-mode: none;
     margin-top: -20%;
     object-fit: contain;
     display: block;
@@ -206,7 +225,6 @@
     width: 100%;
     display: block;
     margin-left: 12%;
-    
 }
 
 .container {
