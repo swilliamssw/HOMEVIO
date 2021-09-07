@@ -4,6 +4,7 @@
     box-sizing: border-box;
     border: none;
     text-decoration: none;
+    max-width: 100%;
 }
 
 /* Layout*/
@@ -23,7 +24,6 @@
     text-align: center;
     font-size: 35px;
     font-family: Poppins, sans-serif;
-    display: fixed;
     margin-top: 25%;
 }
 
@@ -42,8 +42,8 @@
 }
 
 .container video {
-    width: 400px;
-    height: 350px;
+    width: 100%;
+    height: auto;
     display: inline-block;
     position: absolute;
     align-content: center;
@@ -56,12 +56,6 @@
     text-align: center;
 }
 
-.column,
-.columns {
-    width: 100%;
-    float: left;
-    box-sizing: border-box;
-}
 
 /* Logo image and text */
 .logo-image {
@@ -70,14 +64,14 @@
 }
 
 .logo-image a img {
-    width: 80px;
+    width: 50px;
     height: auto;
-    display: flex;
-    margin-top: 130px;
+    display: block;
+    margin-top: 73%;
     mix-blend-mode: screen;
     margin-bottom: 100%;
     position: absolute;
-    margin-left: 150px;
+    margin-left: 85%;
     color: turquoise;
 }
 
@@ -96,10 +90,10 @@
     font-family: Poppins, sans-serif;
     letter-spacing: 4px;
     text-align: center;
-    font-size: 25px;
+    font-size: 23px;
     justify-content: center;
     align-content: center;
-    margin-left: 16%;
+    margin-left: 20%;
 }
 
 /*Navigation Menu*/
@@ -110,12 +104,13 @@
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    font-size: 11px;
+    font-size: 13px;
     padding-top: 10px;
     line-height: 1px;
     padding: 5px;
-    margin: 5px;
+    margin: 2px;
     margin-left: 8%;
+    padding-bottom: 10px;
 }
 
 .menu a {
@@ -134,7 +129,7 @@
 
 /* Hero video */
 .hero-video video {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     align-items: center;
     display: block;
@@ -150,10 +145,10 @@
     transition: all 0.1s cubic-bezier(.25, .8, .25, 1);
     cursor: pointer;
     border-radius: 25px;
-    margin-left: 140px;
+    margin-left: 40%;
     position: absolute;
     mix-blend-mode: normal;
-    margin-top: -70px;
+    margin-top: -20%;
     object-fit: contain;
     display: block;
 }
@@ -181,7 +176,7 @@
 .cover-text h2 {
     color: slategray;
     text-align: center;
-    font-size: 23px;
+    font-size: 22px;
     font-family: Poppins, sans-serif;
     object-fit: contain;
     margin-top: -35%;
@@ -197,37 +192,45 @@
     font-size: 18px;
     font-family: Poppins, sans-serif;
     margin-top: 28%;
-    font-weight: lighter;
-    padding-bottom: 10px;
+    font-weight: bolder;
+    padding-bottom: 15px;
     margin-bottom: 1%;
 }
 
-.workout-tabs h3 {
+.row h3 {
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 17px;
     border-bottom: 1px solid turquoise;
-    padding-bottom: 1%;
+    padding-bottom: 5px;
+    max-width: fit-content;
+    width: 100%;
+    display: block;
+    margin-left: 12%;
+    
 }
 
 .container {
     display: block;
     gap: 1rem;
     grid-auto-flow: column;
-    grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax);
     margin-top: 0px;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
 }
 
-.container img {
-    width: 80%;
+.workout-tabs img {
+    width: 80px;
     height: auto;
-    display: flex;
-    justify-content: center;
+    display: block;
     margin-top: 1%;
-    margin-bottom: 20%;
-    border-radius: 20px;
+    margin-bottom: 25px;
+    border-radius: 25px;
     color: turquoise;
     align-items: center;
     margin-left: 35px;
+    padding-top: 10px;
 }
 
 /* About section of page */
@@ -240,13 +243,13 @@
     margin-top: 5%;
     margin-bottom: 10px;
     margin-left: 3%;
+    border-radius: 25px;
 }
 
-.four.coloumns {
+.container p {
     align-items: center;
-    display: flex;
-    float: right;
-    overflow-wrap: break-word;
+    display: block;
+    padding-bottom: 20px;
 }
 
 .about h2 {
@@ -257,7 +260,23 @@
     text-align: center;
     font-family: Poppins, sans-serif;
     padding-top: 25px;
+    padding-bottom: 1px;
 }
-.about {
 
+/* Sign up form */
+
+.sign-up-form h2 {
+    font-family: Poppins, sans-serif;
+    color: turquoise;
+    font-size: 20px;
+    display: block;
+    font-weight: bolder;
+}
+
+.sign-up-form {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
 }
