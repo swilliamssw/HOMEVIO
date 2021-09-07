@@ -56,7 +56,6 @@
     text-align: center;
 }
 
-
 /* Logo image and text */
 .logo-image {
     background: white;
@@ -128,7 +127,6 @@
 }
 
 /* create the level of zoom for main  video */
-
 @keyframes main-zoom {
     from {
         transform: scale(2.1);
@@ -138,6 +136,7 @@
         transform: scale(1);
     }
 }
+
 /* Animates zoom effect on loading page */
  .logo-text{
     animation-name: main-zoom;
@@ -152,7 +151,6 @@
     align-items: center;
     display: block;
     object-fit: cover;
-
 }
 
 #button a {
@@ -264,10 +262,11 @@
     border-radius: 25px;
 }
 
-.container p {
+.container div p {
     align-items: center;
     display: block;
     padding-bottom: 20px;
+    overflow-wrap:break-word;
 }
 
 .about h2 {
@@ -283,14 +282,27 @@
 
 /* Sign up form */
 
-.sign-up-form h2 {
+.sign-up-form h2{
     font-family: Poppins, sans-serif;
     color: turquoise;
     font-size: 20px;
     display: block;
     font-weight: bolder;
+    align-items: center;
+    max-width: fit-content;
 }
 
+.sign-up-form h3{
+    font-family: Poppins, sans-serif;
+    color: slategray;
+    font-size: 15px;
+    display: block;
+    font-weight: lighter;
+    align-items: center;
+    border-bottom: 1px solid turquoise;
+    max-width: fit-content;
+    margin-left: 35%;
+}
 .sign-up-form {
     width: 100%;
     height: auto;
@@ -298,3 +310,4 @@
     padding: 10px;
     text-align: center;
 }
+
