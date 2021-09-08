@@ -138,14 +138,14 @@
 }
 
 /* Animates zoom effect on loading page */
- .logo-text{
+.logo-text {
     animation-name: main-zoom;
     animation-duration: 3s;
     animation-fill-mode: backwards;
 }
 
 /* Hero video */
-.hero-video video{
+.hero-video video {
     width: 100%;
     height: auto;
     align-items: center;
@@ -229,7 +229,7 @@
     display: block;
     gap: 1rem;
     grid-auto-flow: column;
-    grid-template-columns: repeat(auto-fit, minmax);
+    grid-template-columns: repeat(auto-fit, minmax(max));
     margin-top: 0px;
     align-content: center;
     text-align: center;
@@ -266,7 +266,7 @@
     align-items: center;
     display: block;
     padding-bottom: 20px;
-    overflow-wrap:break-word;
+    overflow-wrap: break-word;
 }
 
 .about h2 {
@@ -277,54 +277,95 @@
     text-align: center;
     font-family: Poppins, sans-serif;
     padding-top: 25px;
-    padding-bottom: 1px;
+
 }
 
 /* Sign up form */
 
-.sign-up-heading h2{
+.sign-up-heading h2 {
     font-family: Poppins, sans-serif;
     color: turquoise;
     font-size: 20px;
     display: block;
     font-weight: bolder;
-    align-items: center;
+    text-align: center;
     max-width: fit-content;
 }
 
-.sign-up-heading h3{
+.sign-up-heading h3 {
     font-family: Poppins, sans-serif;
     color: slategray;
-    font-size: 15px;
+    font-size: 13px;
     display: block;
     font-weight: lighter;
-    align-items: center;
+    text-align: center;
     border-bottom: 1px solid turquoise;
     max-width: fit-content;
     margin-left: 35%;
     margin-bottom: 25px;
 }
+
 .sign-up-heading {
     width: 100%;
     height: auto;
     margin: 10px;
     padding: 10px;
-   
+    text-align: center;
 }
 
-input[type=text], input[type=password]{
+input[type=text],
+input[type=password] {
     display: block;
-    float: left;
-    position:relative;
+    float: none;
     width: 100%;
     padding: 5px;
-    background-color: slategray;
+    margin-right: 10px;
+    background-color: turquoise;
     border-radius: 25px;
 }
-
-label h3 {
-    float: left;
-    display: inline-block;
-   
+.sign-up-form {
+    display: block;
+    margin-right: 15px;
+}
+.sign-up-form p {
+    display: block;
+    font-size: 9.5px;
+    font-weight: bold;
+    color: slategray;
+    padding-right: 7px;
 }
 
+.sign-up-form h2 {
+    font-family: Poppins, sans serif;
+    color: turquoise;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-right: 23px;
+}
+
+.sign-up-form h3 {
+    display: block;
+    padding-bottom: 1px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    position: relative;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+
+.terms-condtion p a{
+    font-size: 13px;
+    padding-top: 1px;
+}
+
+.checkbox-styling {
+    font-family: Poppins, sans-serif;
+    display: block;
+    margin-bottom: 10px;
+    color: slategray;
+    margin-right: 10px;
+    max-width: fit-content;
+    justify-content: center;
+    padding-top: 10px;
+}
