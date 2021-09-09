@@ -5,6 +5,7 @@
     border: none;
     text-decoration: none;
     max-width: 100%;
+    list-style: none;
 }
 
 /* Layout*/
@@ -100,8 +101,6 @@
     background-color: rgb(255, 255, 255);
     overflow: hidden;
     display: inline-block;
-    justify-content: center;
-    align-items: center;
     list-style-type: none;
     font-size: 13px;
     padding-top: 10px;
@@ -292,7 +291,7 @@
     max-width: fit-content;
 }
 
-.sign-up-heading h3 {
+.sign-up-heading h3{
     font-family: Poppins, sans-serif;
     color: slategray;
     font-size: 13px;
@@ -345,15 +344,21 @@ input[type=password] {
     font-weight: bolder;
     margin-right: 23px;
 }
-
-.sign-up-form h3 {
+.label-heading {
+    font-family: Poppins, sans-serif;
+    color: slategray;
+    font-size: 13px;
+    border-bottom: 1px solid turquoise;
+    float: left;
+}
+.sign-up-form label {
     display: block;
+   
     padding-bottom: 1px;
     margin-bottom: 5px;
     margin-right: 10px;
     position: relative;
     margin-left: 12px;
-    margin-top: 20px;
 }
 
 .terms-condtion p a {
@@ -371,6 +376,7 @@ input[type=password] {
     justify-content: center;
     padding-top: 10px;
 }
+
 /* Buttons styling */
 button {
     font-family: Poppins, sans-serif;
@@ -387,9 +393,101 @@ button:hover {
 }
 
 /* Footer styling */
-.footer {
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background-color: slategray;
+}
+
+.footer-logo-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.footer-logo-image {
+    width: 100%;
+    text-align: right;
+    
+}
+
+.footer-logo-image img {
+    width: 25px;
+    height: auto;
+    margin-right: 35px;
+
+}
+
+.footer-logo-text h1 {
+    display: inline-block;
+    width: 35px;
+    height: auto;
+    color: turquoise;
+    font-family: Poppins, sans serif;
+    margin-left: 35px;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.footer h2 {
     font-family: Poppins, sans-serif;
     font-size: 8px;
-    color:turquoise;
-    text-align: center; 
+    color: turquoise;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-icons span img {
+    margin: 5px;
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 5px;
+    margin: 10px;
+}
+
+.social-icons {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.copyright img {
+    width: 10px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+}
+
+.copyright p {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+    color: turquoise;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+.footer-menu li a {
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+    color: turquoise;
+    display: inline-block;
+    margin-left: 35px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.footer-menu a {
+    text-align: center;
 }
