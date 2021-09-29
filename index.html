@@ -33,13 +33,10 @@
                     <a href="index.html" class="active">HOME</a>
                 </li>
                 <li>
-                    <a href="#">EXPLORE</a>
+                    <a href="#workout-tabs">EXPLORE</a>
                 </li>
                 <li>
-                    <a href="#">ABOUT</a>
-                </li>
-                <li>
-                    <a href="#">SIGN IN</a>
+                    <a href="#about">ABOUT</a>
                 </li>
             </ul>
         </nav>
@@ -50,7 +47,7 @@
             <!-- Video taken from https://www.pexels.com/video/young-woman-doing-exercise-at-home-6446108/ -->
             <video src="assets/videos/fitness-video/pexels-pavel-danilyuk-6446108.mp4" autoplay loop muted></video>
             <div id="button">
-                <a href="#">SIGN UP</a>
+                <a href="#form">SIGN UP</a>
             </div>
             <div class="cover-text">
                 <h2>BRING HOME WHAT MOVES YOU!</h2>
@@ -59,7 +56,7 @@
     </section>
     <!--very small paragraph and three tabs for yoga, fitness and
         mindfulness/meditation-->
-    <section class="workout-tabs">
+    <section id="workout-tabs" class="workout-tabs">
         <div>
             <h2>FIND COMFORT IN WHAT MOVES YOU</h2>
         </div>
@@ -73,6 +70,9 @@
                 <div class="columns">
                     <a href="#"><img src="assets/images/images/yoga-card.png" alt="yoga image"></a>
                 </div>
+                <div class="tab-text">
+                    <p> From Vinyasa to Ashtanga, to keep mindful movement the core of your day.</p>
+                </div>
                 <div class="four.columns">
                     <a href="#">
                         <h3>FITNESS</h3>
@@ -81,6 +81,9 @@
                 <div class="columns">
                     <!-- Image taken from https://www.pexels.com/photo/photo-of-woman-doing-yoga-2294353/ -->
                     <a href="#"><img src="assets/images/images/fitness-card.png" alt="fitness image"></a>
+                </div>
+                <div class="tab-text">
+                    <p> Train when suites you, with confidence you will get the most out of each workout. </p>
                 </div>
                 <div class="columns">
                     <a href="#">
@@ -91,12 +94,15 @@
                     <!-- Image taken from https://www.pexels.com/photo/woman-girl-animal-dog-4056535/ -->
                     <a href="#"><img src="assets/images/images/meditation-card.png" alt="meditation image"></a>
                 </div>
+                <div class="tab-text">
+                    <p> From Vinyasa to Ashtanga, to keep mindful movement the core of your day.</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- small paragraph with button below with image to right-->
     <section>
-        <div class="about">
+        <div id="about" class="about">
             <h2>READY WHEN YOU ARE</h2>
         </div>
         <div class="container">
@@ -118,91 +124,89 @@
                     </p>
                 </div>
             </div>
-            <hr>
-
-            <!-- Sign-up form -->
-            <section class="sign-up-heading">
-                <div>
-                    <h2>FOR EVERY SPACE AT ANY PACE</h2>
-                    <h3>TRY NOW!</h3>
+        </div>
+        <hr>
+    </section>
+    <!-- Sign-up form -->
+    <section class="sign-up-heading">
+        <div id="form">
+            <h2>FOR EVERY SPACE AT ANY PACE</h2>
+            <h3>TRY NOW!</h3>
+        </div>
+        <form class="sign-up-form">
+            <div>
+                <h2>SIGN UP</h2>
+                <p>Please fill in this form to get registered with us today for FREE!</p>
+                <hr>
+                <label class="label-heading" for="email">EMAIL</label>
+                <div style="opacity: 0.4;">
+                    <input type="text" placeholder="Enter Email" name="email" required>
                 </div>
-                <form>
-                    <div class="sign-up-form">
-                        <h2>SIGN UP</h2>
-                        <p>Please fill in this form to get registered with us today for FREE!</p>
-                        <hr>
-                        <label class="label-heading" for="email">EMAIL</label>
-                        <div style="opacity: 0.4;">
-                            <input type="text" placeholder="Enter Email" name="email" required>
-                        </div>
-                        <label class="label-heading" for="password">PASSWORD</label>
-                        <div style="opacity: 0.4;">
-                            <input type="password" placeholder="Enter Password" name="password" required>
-                        </div>
-                        <label class="label-heading" for="password-repeat">REPEAT PASSWORD</label>
-                        <div style="opacity: 0.4;">
-                            <input type="password" placeholder="Repeat Password" name="password-repeat" required><br>
-                        </div>
-                        <label class="checkbox-styling">
-                            <input type="checkbox" checked="checked" name="remember"> Remember me
-                        </label>
-                        <div class="terms-condtion">
-                            <p>By creating an acount you agree to our <br><a href="#">Terms & Conditions</a></p>
-                        </div>
-                        <div class="form-buttons">
-                            <button type="button" class="cancel-button">CANCEL</button>
-                            <button type="button" class="Submit-button">SUBMIT</button>
-                        </div>
-                    </div>
-                </form>
-            </section>
-            <footer>
-                <!--PRIVACY POLICY,TERMS OF USE,COOKIES AS BUTTONS AND COPYRIGHT LOGO AND 2021 HOMEVIO-->
-                <section class="footer">
-                    <div class="footer-logo-text">
-                        <a href="index.html">
-                            <h1>HOMEVIO</h1>
-                        </a>
-                    </div>
-                    <!-- Instagram icon taken from https://iconscout.com/icons/instagram-->
-                    <div class="social-icons">
-                        <span>
-                            <a href="https://www.instagram.com/" target="_blank"><img
-                                    src="assets/images/images/instagram.svg" alt="instagram icon"></a>
-                        </span>
-                        <!-- Twitter icon taken from https://iconscout.com/icons/twitter-->
-                        <span>
-                            <a href="https://twitter.com/?lang=en-gb" target="_blank"><img
-                                    src="assets/images/images/twitter.svg" alt="twitter icon"></a>
-                        </span>
-                        <!--Facebook icon taken from https://iconscout.com/icons/facebook -->
-                        <span>
-                            <a href="https://www.facebook.com/" target="_blank"><img
-                                    src="assets/images/images/facebook.svg" alt="facbook icon"></a>
-                        </span>
-                    </div>
-                    <div>
-                        <ul class="footer-menu">
-                            <li>
-                                <a href="index.html">HOME</a>
-                            </li>
-                            <li>
-                                <a href="#">EXPLORE</a>
-                            </li>
-                            <li>
-                                <a href="#">ABOUT</a>
-                            </li>
-                            <li>
-                                <a href="#">PRIVACY POLICY</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="copyright">
-                        <p><img src="assets/images/images/copyright-icon.svg">2021 Homevio, Inc. All rights reserved.
-                        </p>
-                    </div>
-                </section>
-            </footer>
+                <label class="label-heading" for="password">PASSWORD</label>
+                <div style="opacity: 0.4;">
+                    <input type="password" placeholder="Enter Password" name="password" required>
+                </div>
+                <label class="label-heading" for="password-repeat">REPEAT PASSWORD</label>
+                <div style="opacity: 0.4;">
+                    <input type="password" placeholder="Repeat Password" name="password-repeat" required><br>
+                </div>
+                <label class="checkbox-styling">
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <div class="terms-condtion">
+                    <p>By creating an acount you agree to our <br><a href="#">Terms & Conditions</a></p>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="cancel-button">CANCEL</button>
+                    <button type="submit" value="submit" class="Submit-button">SUBMIT</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <!--PRIVACY POLICY,TERMS OF USE,COOKIES AS BUTTONS AND COPYRIGHT LOGO AND 2021 HOMEVIO-->
+        <section class="footer">
+            <div class="footer-logo-text">
+                <a href="index.html">
+                    <h1>HOMEVIO</h1>
+                </a>
+            </div>
+            <!-- Instagram icon taken from https://iconscout.com/icons/instagram-->
+            <div class="social-icons">
+                <span>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/images/instagram.svg"
+                            alt="instagram icon"></a>
+                </span>
+                <!-- Twitter icon taken from https://iconscout.com/icons/twitter-->
+                <span>
+                    <a href="https://twitter.com/?lang=en-gb" target="_blank"><img
+                            src="assets/images/images/twitter.svg" alt="twitter icon"></a>
+                </span>
+                <!--Facebook icon taken from https://iconscout.com/icons/facebook -->
+                <span>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/images/facebook.svg"
+                            alt="facbook icon"></a>
+                </span>
+            </div>
+            <div>
+                <ul class="footer-menu">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#workout-tabs">EXPLORE</a>
+                    </li>
+                    <li>
+                        <a href="#about">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p><img src="assets/images/images/copyright-icon.svg">2021 Homevio, Inc. All rights reserved.
+                </p>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
