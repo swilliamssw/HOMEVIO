@@ -5,57 +5,11 @@
     text-decoration: none;
     box-sizing: border-box;
     list-style: none;
-}
-
-/* Layout*/
-.container {
-    position: relative;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.container a {
-    color: slategray;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 35px;
+    max-width: 100%;
     font-family: Poppins, sans-serif;
-    margin-top: 25%;
 }
 
-.container h3:hover {
-    border-bottom: 2px solid turquoise;
-}
-
-.container a img {
-    width: 80%;
-    height: auto;
-    display: block;
-    position: static;
-    margin-bottom: 15px;
-    align-content: center;
-    object-fit: contain;
-}
-
-.container video {
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    position: absolute;
-    align-content: center;
-    justify-content: center;
-}
-
-.container p {
-    font-family: Poppins, sans-serif;
-    color: slategray;
-    text-align: center;
-}
-
+/* Header section */
 /* Logo image and text */
 .logo-image {
     background: white;
@@ -106,7 +60,7 @@
     line-height: 1px;
     padding: 5px;
     margin: 2px;
-    margin-left: 8%;
+    margin-left: 14%;
     padding-bottom: 10px;
 }
 
@@ -124,7 +78,34 @@
     border-bottom: 1px solid rgb(15, 236, 225);
 }
 
-/* create the level of zoom for main  video */
+@media only screen and (min-width: 1000px) {
+    .logo-image a img {
+        width: fit-content;
+        margin-top: 58%;
+        margin-bottom: 100%;
+        margin-left: 87%;
+    }
+
+    .logo-text a {
+        font-size: 30px;
+        margin-left: 41%;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    /*Navigation Menu*/
+    .menu {
+        padding: 0px;
+        margin-left: 22%;
+        padding-bottom: 15px;
+    }
+
+    .menu li {
+        font-size: 18px;
+    }
+}
+
+/*zoom for main logo */
 @keyframes main-zoom {
     from {
         transform: scale(2.1);
@@ -142,6 +123,7 @@
     animation-fill-mode: backwards;
 }
 
+/* Body section */
 /* Hero video */
 .hero-video video {
     width: 100%;
@@ -162,7 +144,7 @@
     border-radius: 25px;
     margin-left: 40%;
     position: absolute;
-    mix-blend-mode: none;
+    mix-blend-mode: screen;
     margin-top: -20%;
     object-fit: contain;
     display: block;
@@ -200,11 +182,32 @@
     display: block;
 }
 
+@media only screen and (min-width: 1000px) {
+
+    /* Hero video */
+    .hero-video video {
+        justify-content: center;
+    }
+
+    #button a {
+        display: inline-block;
+    }
+
+    .hero-video #button {
+        display: inline-block;
+        margin-left: 100px;
+    }
+
+    .cover-text h2 {
+        font-size: 65px;
+    }
+}
+
 /* Workout tabs */
 .workout-tabs h2 {
     color: turquoise;
     text-align: center;
-    font-size: 18px;
+    font-size: 13px;
     font-family: Poppins, sans-serif;
     margin-top: 28%;
     font-weight: bolder;
@@ -228,7 +231,6 @@
     gap: 1rem;
     grid-auto-flow: column;
     grid-template-columns: repeat(auto-fit, minmax(max));
-    margin-top: 0px;
     align-content: center;
     text-align: center;
     justify-content: center;
@@ -245,6 +247,53 @@
     align-items: center;
     margin-left: 35px;
     padding-top: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    /* Workout tabs */
+    .workout-tabs h2 {
+        font-size: 25px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .row h3 {
+        width: 100%;
+        font-size: 25px;
+        margin-left: 49%;
+        color: slategray;
+        font-family: Poppins, sans-serif;
+        margin-top: 1%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .tab-text p {
+        display: block;
+        font-family: Poppins, sans-serif;
+        color: slategray;
+        text-align: center;
+        padding-bottom: 10%;
+        margin-left: 5%;
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .workout-tabs img {
+        width: 400px;
+        max-width: 100%;
+        margin-left: 34%;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+    }
 }
 
 /* About section of page */
@@ -277,29 +326,56 @@
     padding-top: 25px;
 }
 
+@media only screen and (min-width: 1000px) {
+
+    /* About section of page */
+    .container video {
+        width: 75%;
+        display: inline-block;
+        object-fit: contain;
+        margin-top: 5%;
+        margin-bottom: 10px;
+        border-radius: 25px;
+    }
+
+    .container div p {
+        align-items: center;
+        display: block;
+        padding-bottom: 20px;
+        overflow-wrap: break-word;
+    }
+
+    .about h2 {
+        font-size: 18px;
+        font-weight: lighter;
+        color: turquoise;
+        margin-top: 10px;
+        text-align: center;
+        font-family: Poppins, sans-serif;
+        padding-top: 25px;
+    }
+}
+
 /* Sign up form */
 
 .sign-up-heading h2 {
     font-family: Poppins, sans-serif;
     color: turquoise;
     font-size: 20px;
-    display: block;
+    display: inline-block;
     font-weight: bolder;
-    text-align: center;
-    max-width: fit-content;
+    margin-right: 22px;
 }
 
 .sign-up-heading h3 {
     font-family: Poppins, sans-serif;
     color: slategray;
     font-size: 13px;
-    display: block;
+    display: inline-block;
     font-weight: lighter;
-    text-align: center;
     border-bottom: 1px solid turquoise;
-    max-width: fit-content;
-    margin-left: 35%;
     margin-bottom: 25px;
+
 }
 
 .sign-up-heading {
@@ -316,7 +392,6 @@ input[type=password] {
     float: none;
     width: 100%;
     padding: 5px;
-    margin-right: 10px;
     background-color: turquoise;
     border-radius: 25px;
 }
@@ -327,6 +402,7 @@ input[type=password] {
 }
 
 .sign-up-form p {
+    font-family: Poppins, sans-serif;
     display: block;
     font-size: 9.5px;
     font-weight: bold;
@@ -356,6 +432,11 @@ input[type=password] {
     margin-top: 15px;
 }
 
+.sign-up-form input {
+    border-radius: 25px;
+
+}
+
 .sign-up-form label {
     display: block;
     padding-bottom: 1px;
@@ -368,6 +449,9 @@ input[type=password] {
 .terms-condtion p a {
     font-size: 13px;
     padding-top: 1px;
+    text-decoration: none;
+    color: slategray;
+    margin-bottom: 10px;
 }
 
 .checkbox-styling {
@@ -384,37 +468,40 @@ input[type=password] {
 /* Buttons styling */
 button {
     font-family: Poppins, sans-serif;
+    font-size: 10px;
     color: slategray;
     display: inline-block;
     border-radius: 25px;
     border-bottom: 2px solid turquoise;
     padding: 5px;
     margin-right: 5px;
+    margin-top: 10px;
 }
 
 button:hover {
     border-bottom: 1px solid turquoise;
 }
 
-/* Footer styling */
+/* Footer section */
 footer {
-    box-sizing: border-box;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     background-color: slategray;
     border-radius: 25px;
+    margin: 15px;
 }
 
 .footer-logo-text h1 {
-    display: block;
+    display: inline-block;
     color: turquoise;
     font-family: Poppins, sans serif;
     font-size: 25px;
     padding-top: 10px;
+    padding-left: 35%;
 }
 
 .social-icons span img {
-    margin: 20px;
+    margin: 10px;
     width: 25px;
     height: auto;
     cursor: pointer;
@@ -422,11 +509,13 @@ footer {
 }
 
 .social-icons {
-    display: block;
     width: 100%;
+    height: auto;
+    display: block;
     position: absolute;
-    margin-left: 65%;
-    float: right;
+    margin-left: 50%;
+    margin-bottom: 10px;
+    margin-top: 35px;
 }
 
 .footer-menu {
@@ -441,7 +530,7 @@ footer {
     font-family: Poppins, sans-serif;
     font-size: 11px;
     color: turquoise;
-    padding:10px;
+    padding: 10px;
     margin: 2px;
     display: inline-block;
 }
@@ -456,7 +545,7 @@ footer {
 .copyright {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .copyright p {
