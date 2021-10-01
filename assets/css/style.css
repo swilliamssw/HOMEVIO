@@ -25,12 +25,9 @@
     margin-bottom: 100%;
     position: absolute;
     margin-left: 85%;
-    color: turquoise;
 }
 
 .logo-text a {
-    top: 0;
-    left: 0;
     padding-bottom: 5px;
     padding-top: 22px;
 }
@@ -46,6 +43,7 @@
     justify-content: center;
     align-content: center;
     margin-left: 20%;
+    padding: 15px 15px;
 }
 
 /*Navigation Menu*/
@@ -77,20 +75,23 @@
 }
 
 @media only screen and (min-width: 1000px) {
+
     .logo-image a img {
-        width: fit-content;
-        margin-top: 58%;
+        width: 80px;
+        height: auto;
+        display: inline-block;
+        margin-top: 60%;
         margin-bottom: 100%;
-        margin-left: 87%;
     }
 
-    .logo-text a {
-        font-size: 30px;
-        margin-left: 41%;
-        text-align: center;
-        padding-bottom: 0;
-    }
-
+    
+.logo-text a {
+    font-size: 23px;
+    justify-content: center;
+    align-content: center;
+    padding: 15px 15px;
+    
+}
     /*Navigation Menu*/
     .menu {
         padding: 0px;
@@ -203,22 +204,31 @@
 .workout-tabs h2 {
     color: turquoise;
     text-align: center;
-    font-size: 13px;
+    font-size: 17px;
     margin-top: 28%;
     font-weight: bolder;
     padding-bottom: 15px;
     margin-bottom: 1%;
 }
 
+.tab-text p {
+    display: block;
+    color: slategray;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 15px 15px;
+}
+
 .row h3 {
     font-weight: lighter;
     font-size: 17px;
     border-bottom: 1px solid turquoise;
-    padding-bottom: 5px;
+    padding-bottom: 1px;
     max-width: fit-content;
     width: 100%;
-    display: block;
-    margin-left: 12%;
+    display: inline-block;
+    color: slategray;
 }
 
 .container {
@@ -232,15 +242,15 @@
 }
 
 .workout-tabs img {
-    width: 80px;
+    max-width: fit-content;
+    width: 210px;
     height: auto;
-    display: block;
+    display: inline-block;
     margin-top: 1%;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     border-radius: 25px;
     color: turquoise;
     align-items: center;
-    margin-left: 35px;
     padding-top: 10px;
 }
 
@@ -261,14 +271,6 @@
         margin-top: 1%;
         text-align: center;
         justify-content: center;
-    }
-
-    .tab-text p {
-        display: block;
-        color: slategray;
-        text-align: center;
-        padding-bottom: 10%;
-        margin-left: 5%;
     }
 
     .container {
@@ -301,7 +303,7 @@
     border-radius: 25px;
 }
 
-.container-video  video{
+.container-video video {
     border-radius: 25px;
     padding: 15px 15px;
 }
@@ -312,13 +314,13 @@
     padding-bottom: 20px;
     overflow-wrap: break-word;
     color: slategray;
-    font-size: 10px;
+    font-size: 12px;
     padding: 15px 15px;
 }
 
 .about h2 {
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: bolder;
     color: turquoise;
     margin-top: 10px;
     text-align: center;
