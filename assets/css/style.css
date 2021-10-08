@@ -38,7 +38,7 @@ footer {
     }
 
     .logo-text a {
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         overflow-y: hidden;
         display: inline-block;
         margin-left: 10px;
@@ -82,8 +82,10 @@ footer {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 762px) {
 
-    .logo-image {
-        top: 550px;
+     /* Header section */
+    /* Logo image and text */
+    .logo-image  {
+        top: 580px;
     }
 
     .logo-image img {
@@ -92,18 +94,25 @@ footer {
     }
 
     .logo-text a {
-        font-size: 30px;
-        top: 1px;
+        font-size: 35px;
+        padding-top: 1px;
+        margin-bottom: 10px;
     }
 
     /*Navigation Menu*/
     .menu {
         margin-left: 14%;
         margin-top: 5px;
+        margin-bottom: 10px;
     }
 
     .menu a {
         font-size: 20px;
+    }
+
+    .menu li {
+        overflow: visible;
+        margin-left: 80px;
     }
 }
 
@@ -219,15 +228,18 @@ footer {
     /* Hero video */
     .hero-video video {
         width: 150%;
-
     }
 
     #button a {
+        margin: 15px;
+        padding: 15px;
+        bottom: 150px;
         margin-left: 45%;
     }
 
     .cover-text h2 {
         font-size: 45px;
+
     }
 }
 
@@ -318,7 +330,8 @@ footer {
     .workout-tabs h2 {
         font-size: 25px;
         margin-top: 35%;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
     }
 
     .tab-text p {
@@ -339,7 +352,7 @@ footer {
 
     /* Workout tabs */
     .workout-tabs h2 {
-        font-size: 25px;
+        font-size: 35px;
         justify-content: center;
         align-content: center;
     }
@@ -391,7 +404,7 @@ footer {
         width: 88%;
         border-radius: 25px;
         margin: 15px ;
-        display: block;
+        display: inline-block;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
@@ -417,27 +430,20 @@ footer {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+/* About section of page */
+.about-text {
+    padding: 15px 15px;
+    display: block;
+    margin: 15px 15px;
+}
+.about-text p {
+    padding-bottom: 15px;
+    font-size: 17px;
+}
 
-    /* About section of page */
-    .container-video video {
-        border-radius: 25px;
-        padding: 15px 15px;
-        width: 650px;
-    }
-
-    .about-text p {
-        align-items: center;
-        display: block;
-        padding-bottom: 20px;
-        overflow-wrap: break-word;
-        color: slategray;
-        font-size: 12px;
-        padding: 15px 15px;
-    }
-
-    .about h2 {
-        font-size: 20px;
-    }
+.about h2 {
+    font-size: 25px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -523,7 +529,6 @@ footer {
         font-size: 9.5px;
         font-weight: bold;
         color: slategray;
-        
     }
 
     .sign-up-form a {
