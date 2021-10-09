@@ -390,44 +390,6 @@ footer {
     }
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-    /* Workout tabs */
-    .workout-tabs h2 {
-        font-size: 35px;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .row h3 {
-        width: 100%;
-        font-size: 25px;
-        margin-left: 49%;
-        color: slategray;
-        margin-top: 1%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .container {
-        display: block;
-        width: 100%;
-        align-content: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .workout-tabs img {
-        width: 400px;
-        max-width: 100%;
-        margin-left: 34%;
-        text-align: center;
-        align-content: center;
-        justify-content: center;
-    }
-}
-
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
@@ -494,31 +456,7 @@ footer {
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-    /* About section of page */
-    .container video {
-        width: 75%;
-        display: inline-block;
-        object-fit: contain;
-        margin-top: 5%;
-        margin-bottom: 10px;
-        border-radius: 25px;
-    }
-
-    .container div p {
-        align-items: center;
-        display: block;
-        padding-bottom: 20px;
-        overflow-wrap: break-word;
-    }
-
-    .about h2 {
-        font-size: 18px;
-        font-weight: lighter;
-        color: turquoise;
-        margin-top: 10px;
-        text-align: center;
-        padding-top: 25px;
-    }
+  
 }
 
 /* Custom, iPhone Retina */
