@@ -54,10 +54,13 @@ footer {
         letter-spacing: 4px;
         text-align: center;
         font-size: 25px;
-        margin-left: 20px;
     }
 
     /*Navigation Menu*/
+    .menu {
+        margin-left:10px ;
+    }
+
     .menu li {
         background: white;
         overflow: hidden;
@@ -66,7 +69,7 @@ footer {
         padding-top: 5px;
         line-height: 2px;
         padding: 5px;
-        margin-left: 14%;
+        margin-left: 40px;
         padding-bottom: 10px;
         position: relative;
     }
@@ -93,8 +96,12 @@ footer {
         height: 55px;
         top: 270px;
     }
-}
 
+ /*Navigation Menu*/
+    .menu {
+        margin-left:30px ;
+    }
+}
 /* Small Devices, Tablets */
 @media only screen and (min-width : 762px) {
     /* Header section */
@@ -116,14 +123,16 @@ footer {
     }
 
     /*Navigation Menu*/
-   
+    .menu {
+        margin-left: 150px ;
+    }
     .menu li a {
         font-size: 25px;
     }
 
     .menu li {
         overflow: visible;
-        margin-left: 125px;
+        margin:40px;
     }
 }
 
