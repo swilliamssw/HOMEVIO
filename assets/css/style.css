@@ -58,7 +58,7 @@ footer {
 
     /*Navigation Menu*/
     .menu {
-        margin-left:10px ;
+        margin-left: 10px;
     }
 
     .menu li {
@@ -90,23 +90,26 @@ footer {
 }
 
 @media only screen and (min-width : 400px) {
-      /* Logo image */
+
+    /* Logo image */
     .logo-image img {
         width: 55px;
         height: 55px;
         top: 270px;
     }
 
- /*Navigation Menu*/
+    /*Navigation Menu*/
     .menu {
-        margin-left:30px ;
+        margin-left: 30px;
     }
 }
+
 /* Small Devices, Tablets */
 @media only screen and (min-width : 762px) {
+
     /* Header section */
     /* Logo image and text */
-    header{
+    header {
         height: 160px;
     }
 
@@ -124,15 +127,17 @@ footer {
 
     /*Navigation Menu*/
     .menu {
-        margin-left: 150px ;
+        margin-left: 116px;
     }
+
     .menu li a {
         font-size: 25px;
     }
 
     .menu li {
         overflow: visible;
-        margin:40px;
+        margin: 40px;
+        margin-top: 8px;
     }
 }
 
@@ -167,35 +172,20 @@ footer {
     }
 
     /*Navigation Menu*/
-    .menu li a {
-        overflow: visible;
-        font-size: 20px;
-        padding-bottom: 5px;
-        margin-left: 160px;
+    .menu {
+        padding-bottom:0;
+        margin-left: 395px;
+        margin-top: 20px;
     }
 
     .menu li {
-        color: slategray;
-        text-align: center;
+        margin: 10px;
     }
-    
-    .menu li {
-        background: white;
-        overflow: hidden;
-        display: inline-block;
-        list-style-type: none;
-        padding-top: 5px;
-        line-height: 2px;
-        padding: 5px;
-        margin-left: 14%;
-        padding-bottom: 10px;
+
+    .menu li a {
+        font-size: 25px;
+        margin: 50px;
         position: relative;
-    }
-
-    .menu li a {
-        color: slategray;
-        text-align: center;
-        font-size: 15px;
     }
 }
 
@@ -294,7 +284,6 @@ footer {
 
     .cover-text h2 {
         font-size: 45px;
-
     }
 }
 
@@ -307,16 +296,16 @@ footer {
     }
 
     #button a {
-        display: inline-block;
+        bottom: 270px;
     }
 
-    .hero-video #button {
-        display: inline-block;
-        margin-left: 100px;
+     #button {
+        margin-left: 50px;
     }
 
     .cover-text h2 {
-        font-size: 65px;
+        font-size: 80px;
+        margin-top: -600px;
     }
 }
 
