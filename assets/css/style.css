@@ -23,51 +23,58 @@ footer {
 
     /* Header section */
     /* Logo image and text */
+    header {
+        background: white;
+        margin: 0;
+        padding: 0;
+        height: 110px;
+        position: relative;
+    }
+
     .logo-image {
         background: none;
         mix-blend-mode: screen;
         margin-left: 83%;
         position: relative;
-        top: 310px;
     }
 
     .logo-image img {
         width: 50px;
         height: 50px;
-        display: block;
+        position: absolute;
+        top: 260px;
     }
 
     .logo-text a {
-        padding-bottom: 5px;
         overflow-y: hidden;
         display: inline-block;
-        margin-left: 10px;
         width: 100%;
         height: auto;
         color: turquoise;
         letter-spacing: 4px;
         text-align: center;
-        font-size: 23px;
+        font-size: 25px;
+        margin-left: 20px;
     }
 
     /*Navigation Menu*/
     .menu li {
-        background-color: rgb(255, 255, 255);
+        background: white;
         overflow: hidden;
         display: inline-block;
         list-style-type: none;
-        font-size: 13px;
-        padding-top: 10px;
-        line-height: 1px;
+        padding-top: 5px;
+        line-height: 2px;
         padding: 5px;
-        margin: 2px;
         margin-left: 14%;
         padding-bottom: 10px;
+        position: relative;
     }
 
-    .menu a {
+    .menu li a {
         color: slategray;
         text-align: center;
+        font-size: 15px;
     }
 
     .active {
@@ -79,69 +86,107 @@ footer {
     }
 }
 
+@media only screen and (min-width : 400px) {
+      /* Logo image */
+    .logo-image img {
+        width: 55px;
+        height: 55px;
+        top: 270px;
+    }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (min-width : 762px) {
-
-     /* Header section */
+    /* Header section */
     /* Logo image and text */
-    .logo-image  {
-        top: 580px;
+    header{
+        height: 160px;
     }
 
     .logo-image img {
         width: 100px;
         height: 100px;
+        top: 470px;
     }
 
     .logo-text a {
         font-size: 35px;
         padding-top: 1px;
-        margin-bottom: 10px;
+        margin-left: 5px;
     }
 
     /*Navigation Menu*/
-    .menu {
-        margin-left: 14%;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-
-    .menu a {
-        font-size: 20px;
+   
+    .menu li a {
+        font-size: 25px;
     }
 
     .menu li {
         overflow: visible;
-        margin-left: 80px;
+        margin-left: 125px;
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-    .logo-image a img {
-        width: 80px;
-        height: auto;
-        margin-top: 60%;
-        margin-bottom: 100%;
+    /* Header section */
+    /* Logo image and text */
+    header {
+        height: 170px;
+    }
+
+    .logo-image {
+        margin-left: 88%;
+    }
+
+    .logo-image img {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 825px;
     }
 
     .logo-text a {
-        font-size: 23px;
-        justify-content: center;
-        align-content: center;
-        padding: 15px 15px;
+        overflow-y: hidden;
+        display: inline-block;
+        margin-left: 10px;
+        width: 100%;
+        height: 100px;
+        font-size: 40px;
+        padding: 0;
     }
 
     /*Navigation Menu*/
-    .menu {
-        padding: 0px;
-        margin-left: 22%;
-        padding-bottom: 15px;
+    .menu li a {
+        overflow: visible;
+        font-size: 20px;
+        padding-bottom: 5px;
+        margin-left: 160px;
     }
 
     .menu li {
-        font-size: 18px;
+        color: slategray;
+        text-align: center;
+    }
+    
+    .menu li {
+        background: white;
+        overflow: hidden;
+        display: inline-block;
+        list-style-type: none;
+        padding-top: 5px;
+        line-height: 2px;
+        padding: 5px;
+        margin-left: 14%;
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+    .menu li a {
+        color: slategray;
+        text-align: center;
+        font-size: 15px;
     }
 }
 
@@ -234,7 +279,8 @@ footer {
         margin: 15px;
         padding: 15px;
         bottom: 150px;
-        margin-left: 45%;
+        margin-left: 42%;
+        font-size: 25px;
     }
 
     .cover-text h2 {
@@ -402,7 +448,7 @@ footer {
     .container-video video {
         width: 88%;
         border-radius: 25px;
-        margin: 15px ;
+        margin: 15px;
         display: inline-block;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
@@ -430,21 +476,21 @@ footer {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
-/* About section of page */
-.about-text {
-    padding: 15px 15px;
-    display: block;
-    margin: 15px 15px;
-}
+    /* About section of page */
+    .about-text {
+        padding: 15px 15px;
+        display: block;
+        margin: 15px 15px;
+    }
 
-.about-text p {
-    padding-bottom: 15px;
-    font-size: 17px;
-}
+    .about-text p {
+        padding-bottom: 15px;
+        font-size: 17px;
+    }
 
-.about h2 {
-    font-size: 25px;
-}
+    .about h2 {
+        font-size: 25px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -579,9 +625,11 @@ footer {
         padding-top: 10px;
     }
 }
+
 @media only screen and (min-width : 762px) {
-      /* Sign up form */
-      .sign-up-heading h2 {
+
+    /* Sign up form */
+    .sign-up-heading h2 {
         font-size: 25px;
     }
 
@@ -620,9 +668,9 @@ footer {
         margin-bottom: 10px;
     }
 }
-@media only screen and (min-width : 992){
 
-}
+@media only screen and (min-width : 992px) {}
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
@@ -643,15 +691,16 @@ footer {
         border-bottom: 1px solid turquoise;
     }
 }
+
 @media only screen and (min-width : 762px) {
-     /* Buttons styling */
-     button {
+
+    /* Buttons styling */
+    button {
         font-size: 15px;
     }
 }
-@media only screen and (min-width :992px){
 
-}
+@media only screen and (min-width :992px) {}
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
@@ -661,6 +710,7 @@ footer {
         max-width: 100%;
         height: auto;
     }
+
     .footer {
         background-color: slategray;
         border-radius: 25px;
@@ -732,8 +782,10 @@ footer {
         text-align: center;
     }
 }
+
 @media only screen and (min-width : 762px) {
-      /* Footer section */
+
+    /* Footer section */
     .footer-logo-text h2 {
         font-size: 30px;
         margin-left: 31%;
@@ -749,7 +801,6 @@ footer {
         height: auto;
         display: inline-block;
         position: relative;
-       
     }
 
     .footer-menu li a {
