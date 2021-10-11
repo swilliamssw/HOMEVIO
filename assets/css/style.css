@@ -18,10 +18,10 @@ footer {
     padding-bottom: 10px;
 }
 
+/* Header section */
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
-    /* Header section */
     /* Logo image and text */
     header {
         background: white;
@@ -29,20 +29,6 @@ footer {
         padding: 0;
         height: 110px;
         position: relative;
-    }
-
-    .logo-image {
-        background: none;
-        mix-blend-mode: screen;
-        margin-left: 83%;
-        position: relative;
-    }
-
-    .logo-image img {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 260px;
     }
 
     .logo-text a {
@@ -91,13 +77,6 @@ footer {
 
 @media only screen and (min-width : 400px) {
 
-    /* Logo image */
-    .logo-image img {
-        width: 55px;
-        height: 55px;
-        top: 270px;
-    }
-
     /*Navigation Menu*/
     .menu {
         margin-left: 30px;
@@ -107,16 +86,9 @@ footer {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 762px) {
 
-    /* Header section */
     /* Logo image and text */
     header {
         height: 160px;
-    }
-
-    .logo-image img {
-        width: 100px;
-        height: 100px;
-        top: 470px;
     }
 
     .logo-text a {
@@ -144,47 +116,47 @@ footer {
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-    /* Header section */
     /* Logo image and text */
     header {
-        height: 170px;
+        height: 90px;
+        padding: 20px 15px;
     }
 
-    .logo-image {
-        margin-left: 88%;
-    }
-
-    .logo-image img {
-        width: 120px;
-        height: 120px;
-        position: absolute;
-        top: 825px;
+    .logo-text {
+        float: left;
+        margin-left: 40px;
     }
 
     .logo-text a {
         overflow-y: hidden;
         display: inline-block;
-        margin-left: 10px;
         width: 100%;
-        height: 100px;
-        font-size: 40px;
+        height: auto;
+        font-size: 28px;
         padding: 0;
     }
 
     /*Navigation Menu*/
     .menu {
-        padding-bottom:0;
+        padding-bottom: 0;
         margin-left: 395px;
         margin-top: 20px;
+        float: right;
+    }
+
+    .menu,
+    .logo-text {
+        line-height: 60px;
     }
 
     .menu li {
-        margin: 10px;
+        margin: 5px;
+        float: left;
     }
 
     .menu li a {
-        font-size: 25px;
-        margin: 50px;
+        font-size: 20px;
+        margin: 20px;
         position: relative;
     }
 }
@@ -197,6 +169,20 @@ footer {
 
     to {
         transform: scale(1);
+    }
+}
+
+@media only screen and (min-width : 992px) {
+
+    /*zoom for main logo */
+    @keyframes main-zoom {
+        from {
+            transform: scale(1.2);
+        }
+
+        to {
+            transform: scale(1);
+        }
     }
 }
 
@@ -218,6 +204,20 @@ footer {
         align-items: center;
         display: block;
         object-fit: cover;
+    }
+
+    .logo-image {
+        background: none;
+        mix-blend-mode: screen;
+        margin-left: 83%;
+        position: relative;
+    }
+
+    .logo-image img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 260px;
     }
 
     #button a {
@@ -266,12 +266,28 @@ footer {
     }
 }
 
+@media only screen and (min-width : 400px) {
+
+    /* Logo image */
+    .logo-image img {
+        width: 55px;
+        height: 55px;
+        top: 270px;
+    }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
     /* Hero video */
     .hero-video video {
         width: 150%;
+    }
+
+    .logo-image img {
+        width: 100px;
+        height: 100px;
+        top: 470px;
     }
 
     #button a {
@@ -289,23 +305,34 @@ footer {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
-    /* Hero video */
     .hero-video video {
-        justify-content: center;
+        height: 610px;
+    }
+
+    .logo-image {
+        margin-left: 92%;
+    }
+
+    .logo-image img {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 550px;
     }
 
     #button a {
-        bottom: 270px;
+        bottom: 180px;
+        font-size: 18px;
+        color: turquoise;
     }
 
-     #button {
-        margin-left: 50px;
+    #button {
+        margin-left: 55px;
     }
 
     .cover-text h2 {
         font-size: 80px;
-        margin-top: -600px;
+        margin-top: -500px;
     }
 }
 
@@ -390,6 +417,42 @@ footer {
     }
 }
 
+@media only screen and (min-width :992px) {
+
+    /* Workout tabs */
+    .workout-tabs h2 {
+        font-size: 30px;
+        margin-top: 23%;
+        padding-bottom: 0;
+    }
+
+    .tab-text p {
+        font-size: 18px;
+    }
+
+    .row h3 {
+        font-size: 20px;
+    }
+
+    .workout-tabs img {
+        width: 310px;
+    }
+
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
@@ -454,10 +517,7 @@ footer {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-  
-}
+@media only screen and (min-width : 992px) {}
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
