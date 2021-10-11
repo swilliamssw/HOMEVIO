@@ -76,6 +76,7 @@ footer {
 }
 
 @media only screen and (min-width : 400px) {
+
     /*Navigation Menu*/
     .menu {
         margin-left: 30px;
@@ -204,6 +205,7 @@ footer {
         display: block;
         object-fit: cover;
     }
+
     .logo-image {
         background: none;
         mix-blend-mode: screen;
@@ -217,6 +219,7 @@ footer {
         position: absolute;
         top: 260px;
     }
+
     #button a {
         margin: 5px;
         padding: 5px;
@@ -305,6 +308,7 @@ footer {
     .hero-video video {
         height: 610px;
     }
+
     .logo-image {
         margin-left: 92%;
     }
@@ -315,6 +319,7 @@ footer {
         position: absolute;
         top: 550px;
     }
+
     #button a {
         bottom: 180px;
         font-size: 18px;
@@ -322,7 +327,7 @@ footer {
     }
 
     #button {
-        margin-left: 35px;
+        margin-left: 55px;
     }
 
     .cover-text h2 {
@@ -411,10 +416,11 @@ footer {
         width: 410px;
     }
 }
-@media only screen and (min-width :992px){
 
-     /* Workout tabs */
-     .workout-tabs h2 {
+@media only screen and (min-width :992px) {
+
+    /* Workout tabs */
+    .workout-tabs h2 {
         font-size: 30px;
         margin-top: 23%;
         padding-bottom: 0;
@@ -430,6 +436,20 @@ footer {
 
     .workout-tabs img {
         width: 310px;
+    }
+
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
     }
 }
 
