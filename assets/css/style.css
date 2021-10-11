@@ -18,10 +18,10 @@ footer {
     padding-bottom: 10px;
 }
 
+/* Header section */
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
-    /* Header section */
     /* Logo image and text */
     header {
         background: white;
@@ -107,7 +107,6 @@ footer {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 762px) {
 
-    /* Header section */
     /* Logo image and text */
     header {
         height: 160px;
@@ -144,10 +143,10 @@ footer {
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-    /* Header section */
     /* Logo image and text */
     header {
-        height: 170px;
+        height: 90px;
+        padding: 20px 15px;
     }
 
     .logo-image {
@@ -161,30 +160,41 @@ footer {
         top: 825px;
     }
 
+    .logo-text {
+        float: left;
+        margin-left: 40px;
+    }
+
     .logo-text a {
         overflow-y: hidden;
         display: inline-block;
-        margin-left: 10px;
         width: 100%;
-        height: 100px;
-        font-size: 40px;
+        height: auto;
+        font-size: 28px;
         padding: 0;
     }
 
     /*Navigation Menu*/
     .menu {
-        padding-bottom:0;
+        padding-bottom: 0;
         margin-left: 395px;
         margin-top: 20px;
+        float: right;
+    }
+
+    .menu,
+    .logo-text {
+        line-height: 60px;
     }
 
     .menu li {
-        margin: 10px;
+        margin: 5px;
+        float: left;
     }
 
     .menu li a {
-        font-size: 25px;
-        margin: 50px;
+        font-size: 20px;
+        margin: 20px;
         position: relative;
     }
 }
@@ -197,6 +207,20 @@ footer {
 
     to {
         transform: scale(1);
+    }
+}
+
+@media only screen and (min-width : 992px) {
+
+    /*zoom for main logo */
+    @keyframes main-zoom {
+        from {
+            transform: scale(1.2);
+        }
+
+        to {
+            transform: scale(1);
+        }
     }
 }
 
@@ -299,7 +323,7 @@ footer {
         bottom: 270px;
     }
 
-     #button {
+    #button {
         margin-left: 50px;
     }
 
@@ -454,10 +478,7 @@ footer {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-  
-}
+@media only screen and (min-width : 992px) {}
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
