@@ -132,7 +132,7 @@ footer {
         display: inline-block;
         width: 100%;
         height: auto;
-        font-size: 28px;
+        font-size: 25px;
         padding: 0;
     }
 
@@ -306,7 +306,7 @@ footer {
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     .hero-video video {
-        height: 610px;
+        height: 500px;
     }
 
     .logo-image {
@@ -314,14 +314,14 @@ footer {
     }
 
     .logo-image img {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         position: absolute;
-        top: 550px;
+        top: 470px;
     }
 
     #button a {
-        bottom: 180px;
+        bottom: 150px;
         font-size: 18px;
         color: turquoise;
     }
@@ -331,8 +331,8 @@ footer {
     }
 
     .cover-text h2 {
-        font-size: 80px;
-        margin-top: -500px;
+        font-size: 70px;
+        margin-top: -400px;
     }
 }
 
@@ -422,12 +422,13 @@ footer {
     /* Workout tabs */
     .workout-tabs h2 {
         font-size: 30px;
-        margin-top: 23%;
+        margin-top: 20%;
         padding-bottom: 0;
     }
 
     .tab-text p {
-        font-size: 18px;
+        font-size: 17px;
+        padding: 15px 50px;
     }
 
     .row h3 {
@@ -443,6 +444,7 @@ footer {
         width: 33.33%;
         padding: 5px;
     }
+
     .row::after {
         content: "";
         clear: both;
@@ -515,30 +517,34 @@ footer {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-      /* About section of page */
-   
+    /* About section of page */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+.container {
+    margin-bottom: 120px;
+}
+
     .about-video video {
-        width: 35%;
-        float:left;
-        margin: 15px;
-        margin-left: 60px; 
+        width: 40%;
+        float: left;
+        margin-left: 50px;
     }
 
     .about-text p {
-        align-items: center;
-        display: inline-block;
-        padding-bottom: 20px;
-        overflow-wrap: break-word;
-        color: slategray;
-        font-size: 12px;
-        padding: 15px;
+        width: 55%;
+        font-size: 18px;
+        float: right;
+        padding: 5px 50px;
     }
 
     .about h2 {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bolder;
         color: turquoise;
-        margin-top: 20px;
+        margin-top: 120px;
         text-align: center;
         padding-top: 30px;
     }
@@ -658,8 +664,6 @@ footer {
         font-size: 18px;
     }
 
-
-
     .sign-up-form p {
         font-size: 15px;
     }
@@ -690,7 +694,15 @@ footer {
     }
 }
 
-@media only screen and (min-width : 992px) {}
+@media only screen and (min-width : 992px) {
+    .sign-up-form h2 {
+        font-size: 20px;
+    }
+    #form h2 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+}
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
