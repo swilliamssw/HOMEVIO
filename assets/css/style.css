@@ -517,15 +517,17 @@ footer {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+
     /* About section of page */
     .row::after {
         content: "";
         clear: both;
         display: table;
     }
-.container {
-    margin-bottom: 120px;
-}
+
+    .container {
+        margin-bottom: 120px;
+    }
 
     .about-video video {
         width: 40%;
@@ -698,6 +700,7 @@ footer {
     .sign-up-form h2 {
         font-size: 20px;
     }
+
     #form h2 {
         font-size: 30px;
         margin-top: 30px;
@@ -732,8 +735,6 @@ footer {
         font-size: 15px;
     }
 }
-
-@media only screen and (min-width :992px) {}
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
@@ -846,5 +847,41 @@ footer {
 
     .copyright p {
         font-size: 15px;
+    }
+}
+
+@media only screen and (min-width : 992px) {
+
+    /* Footer section */
+    .footer-logo-text h2 {
+        display: inline-block;
+        font-size: 30px;
+        padding-top: 15px;
+        margin-left: 1%;
+    }
+
+    .footer-menu {
+        margin-left: 455px;
+        display: inline-block;
+    }
+
+    .footer-menu li a {
+        font-size: 14px;
+        float: left;
+        margin-left: 30px;
+    }
+
+    .social-icons {
+        display: inline-block;
+        margin-left: 528px;
+    }
+
+    .social-icons span img {
+        width: 25px;
+        margin: 15px;
+    }
+
+    .copyright p {
+        font-size: 10px;
     }
 }
