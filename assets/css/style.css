@@ -438,14 +438,11 @@ footer {
         width: 310px;
     }
 
-    /* Three image containers (use 25% for four, and 50% for two, etc) */
     .column {
         float: left;
         width: 33.33%;
         padding: 5px;
     }
-
-    /* Clear floats after image containers */
     .row::after {
         content: "";
         clear: both;
@@ -468,7 +465,7 @@ footer {
         border-radius: 25px;
     }
 
-    .container-video video {
+    .about-video video {
         width: 88%;
         border-radius: 25px;
         margin: 15px;
@@ -517,7 +514,35 @@ footer {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {}
+@media only screen and (min-width : 992px) {
+      /* About section of page */
+   
+    .about-video video {
+        width: 35%;
+        float:left;
+        margin: 15px;
+        margin-left: 60px; 
+    }
+
+    .about-text p {
+        align-items: center;
+        display: inline-block;
+        padding-bottom: 20px;
+        overflow-wrap: break-word;
+        color: slategray;
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    .about h2 {
+        font-size: 20px;
+        font-weight: bolder;
+        color: turquoise;
+        margin-top: 20px;
+        text-align: center;
+        padding-top: 30px;
+    }
+}
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
