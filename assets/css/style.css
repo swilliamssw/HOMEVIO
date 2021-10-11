@@ -31,20 +31,6 @@ footer {
         position: relative;
     }
 
-    .logo-image {
-        background: none;
-        mix-blend-mode: screen;
-        margin-left: 83%;
-        position: relative;
-    }
-
-    .logo-image img {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 260px;
-    }
-
     .logo-text a {
         overflow-y: hidden;
         display: inline-block;
@@ -90,14 +76,6 @@ footer {
 }
 
 @media only screen and (min-width : 400px) {
-
-    /* Logo image */
-    .logo-image img {
-        width: 55px;
-        height: 55px;
-        top: 270px;
-    }
-
     /*Navigation Menu*/
     .menu {
         margin-left: 30px;
@@ -110,12 +88,6 @@ footer {
     /* Logo image and text */
     header {
         height: 160px;
-    }
-
-    .logo-image img {
-        width: 100px;
-        height: 100px;
-        top: 470px;
     }
 
     .logo-text a {
@@ -147,17 +119,6 @@ footer {
     header {
         height: 90px;
         padding: 20px 15px;
-    }
-
-    .logo-image {
-        margin-left: 88%;
-    }
-
-    .logo-image img {
-        width: 120px;
-        height: 120px;
-        position: absolute;
-        top: 825px;
     }
 
     .logo-text {
@@ -243,7 +204,19 @@ footer {
         display: block;
         object-fit: cover;
     }
+    .logo-image {
+        background: none;
+        mix-blend-mode: screen;
+        margin-left: 83%;
+        position: relative;
+    }
 
+    .logo-image img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 260px;
+    }
     #button a {
         margin: 5px;
         padding: 5px;
@@ -290,12 +263,28 @@ footer {
     }
 }
 
+@media only screen and (min-width : 400px) {
+
+    /* Logo image */
+    .logo-image img {
+        width: 55px;
+        height: 55px;
+        top: 270px;
+    }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 
     /* Hero video */
     .hero-video video {
         width: 150%;
+    }
+
+    .logo-image img {
+        width: 100px;
+        height: 100px;
+        top: 470px;
     }
 
     #button a {
@@ -313,23 +302,32 @@ footer {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
-    /* Hero video */
     .hero-video video {
-        justify-content: center;
+        height: 610px;
+    }
+    .logo-image {
+        margin-left: 92%;
     }
 
+    .logo-image img {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 550px;
+    }
     #button a {
-        bottom: 270px;
+        bottom: 180px;
+        font-size: 18px;
+        color: turquoise;
     }
 
     #button {
-        margin-left: 50px;
+        margin-left: 35px;
     }
 
     .cover-text h2 {
         font-size: 80px;
-        margin-top: -600px;
+        margin-top: -500px;
     }
 }
 
@@ -411,6 +409,27 @@ footer {
 
     .workout-tabs img {
         width: 410px;
+    }
+}
+@media only screen and (min-width :992px){
+
+     /* Workout tabs */
+     .workout-tabs h2 {
+        font-size: 30px;
+        margin-top: 23%;
+        padding-bottom: 0;
+    }
+
+    .tab-text p {
+        font-size: 18px;
+    }
+
+    .row h3 {
+        font-size: 20px;
+    }
+
+    .workout-tabs img {
+        width: 310px;
     }
 }
 
