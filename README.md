@@ -11,7 +11,7 @@ Users of this website are able to find information about the hand-picked workout
 ### Existing Features
 
 - __Navigation Bar__
-  - Featured at the top of the page, the navigtion shows the brands Logoin the left corner __HOMEVIO__ which links to the top of the page.
+  - Featured at the top of the page, the navigtion shows the brands Logo in the left corner __HOMEVIO__ which links to the top of the page.
   - The other navigation links are Home, Explore & About Us which links to differnet sections of the same page. 
   - The navigation is in a font that is congruent with the rest of the page text and a color that contrast with the background. 
   - The navigation clearly tells the user the name of the brand and website  and make the deffent sections information easy to access and find.
@@ -41,6 +41,8 @@ Users of this website are able to find information about the hand-picked workout
   - The sign up section has a form to collect details from the user, so that they can sign up to the services of Homevio.
   - The form collects the Email and a password of the user so that they can then later receive more information and a link to the sign in page, which is to come.
   - the sign form is valuable to the user as it gives them the ability to sign up and join our services.
+  - The sign up form also inlcludes a remember me tick box, which will work in accordance with the sign in link which will be sent to them later on to the users email.
+
   ![Sign Up Form](/assets/Media/homevio_signup_form.png)
 
 - __The Footer__
@@ -97,6 +99,8 @@ The live link can be found here - https://swilliamssw.github.io/HOMEVIO/
 - Instructions on how to implement form validation on the Sign Up page was taken from [(Jigsaw) Validator](https://validator.w3.org/#validate_by_input) and [ws3 validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
 - The instruction for horizonitally aligning my images and text was from [W3C How TO](https://www.w3schools.com/howto/howto_css_images_side_by_side.asp)
+
+- All instructions on how to positon and change things astetically were all taken from [W3C School Tutorials](https://www.w3schools.com/css/default.asp) 
 
 ### Media
 - The photos used on the home and sign up page are from This Open Source site Pexels [Pexels](https://www.pexels.com/)
