@@ -55,7 +55,7 @@ footer {
         padding-top: 5px;
         line-height: 2px;
         padding: 5px;
-        margin-left: 30px;
+        margin-left: 100px;
         padding-bottom: 10px;
         position: relative;
     }
@@ -79,7 +79,7 @@ footer {
 
     /*Navigation Menu*/
     .menu {
-        margin-left: 30px;
+        margin-left: 50px;
     }
 }
 
@@ -282,6 +282,7 @@ footer {
     /* Hero video */
     .hero-video video {
         width: 150%;
+        margin: 10px;    
     }
 
     .logo-image img {
